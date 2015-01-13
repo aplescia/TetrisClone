@@ -16,6 +16,10 @@
 		A89FD1F01A6467CF00CF1D19 /* TetrisCloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89FD1EF1A6467CF00CF1D19 /* TetrisCloneTests.swift */; };
 		A89FD2061A64689000CF1D19 /* Sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = A89FD2051A64689000CF1D19 /* Sprites.atlas */; };
 		A89FD2081A646C9900CF1D19 /* Array2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89FD2071A646C9900CF1D19 /* Array2D.swift */; };
+		A8A275881A65729E00E214F3 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A275871A65729E00E214F3 /* Block.swift */; };
+		A8A2758A1A657B4900E214F3 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A275891A657B4900E214F3 /* Shape.swift */; };
+		A8A2758C1A65857800E214F3 /* SquareShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A2758B1A65857800E214F3 /* SquareShape.swift */; };
+		A8A2758E1A6586E200E214F3 /* TShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A2758D1A6586E200E214F3 /* TShape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +46,10 @@
 		A89FD1EF1A6467CF00CF1D19 /* TetrisCloneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TetrisCloneTests.swift; sourceTree = "<group>"; };
 		A89FD2051A64689000CF1D19 /* Sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Sprites.atlas; sourceTree = "<group>"; };
 		A89FD2071A646C9900CF1D19 /* Array2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array2D.swift; sourceTree = "<group>"; };
+		A8A275871A65729E00E214F3 /* Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
+		A8A275891A657B4900E214F3 /* Shape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
+		A8A2758B1A65857800E214F3 /* SquareShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareShape.swift; sourceTree = "<group>"; };
+		A8A2758D1A6586E200E214F3 /* TShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TShape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +101,10 @@
 				A89FD2041A64688100CF1D19 /* Sounds */,
 				A89FD1D31A6467CF00CF1D19 /* Supporting Files */,
 				A89FD2071A646C9900CF1D19 /* Array2D.swift */,
+				A8A275871A65729E00E214F3 /* Block.swift */,
+				A8A275891A657B4900E214F3 /* Shape.swift */,
+				A8A2758B1A65857800E214F3 /* SquareShape.swift */,
+				A8A2758D1A6586E200E214F3 /* TShape.swift */,
 			);
 			path = TetrisClone;
 			sourceTree = "<group>";
@@ -230,8 +242,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8A2758C1A65857800E214F3 /* SquareShape.swift in Sources */,
 				A89FD1DA1A6467CF00CF1D19 /* GameScene.swift in Sources */,
+				A8A2758A1A657B4900E214F3 /* Shape.swift in Sources */,
 				A89FD2081A646C9900CF1D19 /* Array2D.swift in Sources */,
+				A8A2758E1A6586E200E214F3 /* TShape.swift in Sources */,
+				A8A275881A65729E00E214F3 /* Block.swift in Sources */,
 				A89FD1DC1A6467CF00CF1D19 /* GameViewController.swift in Sources */,
 				A89FD1D61A6467CF00CF1D19 /* AppDelegate.swift in Sources */,
 			);
@@ -425,6 +441,7 @@
 				A89FD1F51A6467CF00CF1D19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A89FD1F61A6467CF00CF1D19 /* Build configuration list for PBXNativeTarget "TetrisCloneTests" */ = {
 			isa = XCConfigurationList;
@@ -433,6 +450,7 @@
 				A89FD1F81A6467CF00CF1D19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
