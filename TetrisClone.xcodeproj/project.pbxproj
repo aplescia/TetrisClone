@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		A89FD1D61A6467CF00CF1D19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89FD1D51A6467CF00CF1D19 /* AppDelegate.swift */; };
-		A89FD1D81A6467CF00CF1D19 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A89FD1D71A6467CF00CF1D19 /* GameScene.sks */; };
 		A89FD1DA1A6467CF00CF1D19 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89FD1D91A6467CF00CF1D19 /* GameScene.swift */; };
 		A89FD1DC1A6467CF00CF1D19 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89FD1DB1A6467CF00CF1D19 /* GameViewController.swift */; };
 		A89FD1DF1A6467CF00CF1D19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A89FD1DD1A6467CF00CF1D19 /* Main.storyboard */; };
 		A89FD1E11A6467CF00CF1D19 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A89FD1E01A6467CF00CF1D19 /* Images.xcassets */; };
 		A89FD1E41A6467CF00CF1D19 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A89FD1E21A6467CF00CF1D19 /* LaunchScreen.xib */; };
 		A89FD1F01A6467CF00CF1D19 /* TetrisCloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89FD1EF1A6467CF00CF1D19 /* TetrisCloneTests.swift */; };
+		A89FD2061A64689000CF1D19 /* Sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = A89FD2051A64689000CF1D19 /* Sprites.atlas */; };
+		A89FD2081A646C9900CF1D19 /* Array2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89FD2071A646C9900CF1D19 /* Array2D.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +32,6 @@
 		A89FD1D01A6467CF00CF1D19 /* TetrisClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TetrisClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A89FD1D41A6467CF00CF1D19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A89FD1D51A6467CF00CF1D19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A89FD1D71A6467CF00CF1D19 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		A89FD1D91A6467CF00CF1D19 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		A89FD1DB1A6467CF00CF1D19 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		A89FD1DE1A6467CF00CF1D19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -40,6 +40,8 @@
 		A89FD1E91A6467CF00CF1D19 /* TetrisCloneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TetrisCloneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A89FD1EE1A6467CF00CF1D19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A89FD1EF1A6467CF00CF1D19 /* TetrisCloneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TetrisCloneTests.swift; sourceTree = "<group>"; };
+		A89FD2051A64689000CF1D19 /* Sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Sprites.atlas; sourceTree = "<group>"; };
+		A89FD2071A646C9900CF1D19 /* Array2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array2D.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,13 +84,15 @@
 			isa = PBXGroup;
 			children = (
 				A89FD1D51A6467CF00CF1D19 /* AppDelegate.swift */,
-				A89FD1D71A6467CF00CF1D19 /* GameScene.sks */,
 				A89FD1D91A6467CF00CF1D19 /* GameScene.swift */,
 				A89FD1DB1A6467CF00CF1D19 /* GameViewController.swift */,
 				A89FD1DD1A6467CF00CF1D19 /* Main.storyboard */,
 				A89FD1E01A6467CF00CF1D19 /* Images.xcassets */,
 				A89FD1E21A6467CF00CF1D19 /* LaunchScreen.xib */,
+				A89FD2051A64689000CF1D19 /* Sprites.atlas */,
+				A89FD2041A64688100CF1D19 /* Sounds */,
 				A89FD1D31A6467CF00CF1D19 /* Supporting Files */,
+				A89FD2071A646C9900CF1D19 /* Array2D.swift */,
 			);
 			path = TetrisClone;
 			sourceTree = "<group>";
@@ -116,6 +120,13 @@
 				A89FD1EE1A6467CF00CF1D19 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A89FD2041A64688100CF1D19 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,7 +211,7 @@
 			files = (
 				A89FD1E41A6467CF00CF1D19 /* LaunchScreen.xib in Resources */,
 				A89FD1E11A6467CF00CF1D19 /* Images.xcassets in Resources */,
-				A89FD1D81A6467CF00CF1D19 /* GameScene.sks in Resources */,
+				A89FD2061A64689000CF1D19 /* Sprites.atlas in Resources */,
 				A89FD1DF1A6467CF00CF1D19 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A89FD1DA1A6467CF00CF1D19 /* GameScene.swift in Sources */,
+				A89FD2081A646C9900CF1D19 /* Array2D.swift in Sources */,
 				A89FD1DC1A6467CF00CF1D19 /* GameViewController.swift in Sources */,
 				A89FD1D61A6467CF00CF1D19 /* AppDelegate.swift in Sources */,
 			);
